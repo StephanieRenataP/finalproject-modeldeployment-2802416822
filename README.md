@@ -1,11 +1,5 @@
 # Credit Score — Training Pipeline + Deployment (v3)
 
-Sinkron dengan `credit_score_model_3.ipynb`. Perubahan dibanding versi sebelumnya:
-`RobustScaler` (bukan `StandardScaler`), model `XGBoost` ditambahkan, ruang
-hyperparameter diperluas (`n_iter=10`), tiga fitur interaksi domain-spesifik
-(`Debt_to_Income`, `Credit_Utilization_Intensity`, `Free_Cash_Flow`), eksperimen
-`class_weight` vs `SMOTE`, dan threshold tuning kelas minoritas `Good`.
-
 ## File
 
 | File | Fungsi |
