@@ -6,6 +6,7 @@ import pandas as pd
 import streamlit as st
 
 from inference import CreditScoreInferenceService
+from training_pipeline import CreditDataCleaner
 
 MODEL_PATH = Path("credit_score_model.pkl")
 
