@@ -158,7 +158,7 @@ def _demo() -> None:
     import argparse
 
     parser = argparse.ArgumentParser(description="Uji cepat inference dari CLI.")
-    parser.add_argument("--model-path", default="models/credit_score_model.pkl")
+    parser.add_argument("--model-path", default="credit_score_model.pkl")
     parser.add_argument("--csv-path", required=True, help="Path CSV data mentah (format sama seperti data_D.csv)")
     args = parser.parse_args()
 
