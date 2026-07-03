@@ -7,7 +7,7 @@ import streamlit as st
 
 from inference import CreditScoreInferenceService
 
-MODEL_PATH = Path("models/credit_score_model.pkl")
+MODEL_PATH = Path("credit_score_model.pkl")
 
 CLASS_COLOR = {"Poor": "#e74c3c", "Standard": "#f1c40f", "Good": "#2ecc71"}
 
