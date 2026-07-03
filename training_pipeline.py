@@ -912,7 +912,7 @@ class CreditScoreTrainingPipeline:
         feature_config: Optional[FeatureConfig] = None,
         training_config: Optional[TrainingConfig] = None,
         mlflow_config: Optional[MLflowConfig] = None,
-        output_model_path: Path = Path("models/credit_score_model.pkl"),
+        output_model_path: Path = Path("credit_score_model.pkl"),
     ):
         self.data_path = Path(data_path)
         self.feature_config = feature_config or FeatureConfig()
@@ -1038,7 +1038,7 @@ class CreditScoreTrainingPipeline:
 def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Training pipeline model Credit Score (v3) dengan MLflow tracking.")
     parser.add_argument("--data-path", type=str, default="data_D.csv", help="Path ke file data_D.csv")
-    parser.add_argument("--output-model-path", type=str, default="models/credit_score_model.pkl",
+    parser.add_argument("--output-model-path", type=str, default="credit_score_model.pkl",
                          help="Path output artefak pickle")
     parser.add_argument("--mlflow-tracking-uri", type=str, default="sqlite:///mlflow.db", help="MLflow tracking URI")
     parser.add_argument("--experiment-name", type=str, default="credit_score_experiment", help="Nama MLflow experiment")
